@@ -4,102 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vashika Maheswaran | AI &amp; Data Science Undergraduate</title>
-<meta name="description" content="Portfolio of Vashika Maheswaran, BSc (Hons) AI with Data Science undergraduate at IIT Colombo. Learn continuously. Think creatively. Build meaningfully.">
+<meta name="description" content="Portfolio of Vashika Maheswaran, BSc (Hons) AI with Data Science undergraduate at IIT Colombo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#fbf8f6; --surface:#ffffff; --text:#2a2230; --muted:#6b6275;
-    --accent:#8a3ffc; --accent2:#e0457b; --border:#eadfe6;
+    --bg:#f7f9fc; --surface:#ffffff; --text:#1c2733; --muted:#5b6876;
+    --accent:#1f4e79; --accent2:#2f80c9; --border:#e1e7ef; --tint:#eaf1f8;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#150f1c; --surface:#1f1729; --text:#f1ecf5; --muted:#a99fb6; --border:#3a2d4a; }
+    :root{ --bg:#0f1720; --surface:#17212c; --text:#e8eef5; --muted:#9aa8b8; --accent:#7db4e6; --accent2:#4f9be0; --border:#263444; --tint:#1b2836; }
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  body{font-family:'Inter',system-ui,sans-serif;font-size:15px;background:var(--bg);color:var(--text);line-height:1.6}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-  .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
 
-  /* NAV */
-  nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:color-mix(in srgb,var(--bg) 85%,transparent);border-bottom:1px solid var(--border)}
-  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
-  .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem}
-  nav ul{display:flex;gap:20px;list-style:none;font-size:.88rem;color:var(--muted)}
+  nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  .logo{font-weight:700;font-size:1rem;color:var(--accent)}
+  nav ul{display:flex;gap:20px;list-style:none;font-size:.82rem;color:var(--muted)}
   nav ul a:hover{color:var(--accent)}
-  @media(max-width:760px){nav ul{display:none}}
+  @media(max-width:700px){nav ul{display:none}}
 
-  /* HERO */
-  .hero{padding:90px 0 70px}
-  .hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}
-  @media(max-width:800px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1;max-width:260px}}
-  .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
-  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;margin:14px 0 16px}
-  .hero .tagline{font-size:1.15rem;color:var(--muted);max-width:560px}
-  .roles{margin-top:14px;font-weight:500;font-size:.95rem}
-  .btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-  .btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid var(--border);background:var(--surface);transition:.2s}
-  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border:none}
-  .btn:hover{transform:translateY(-2px)}
-  .photo{position:relative}
-  .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:28px;display:block;box-shadow:0 20px 50px rgba(138,63,252,.25)}
-  .photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:28px;border:2px solid var(--accent2);opacity:.5;z-index:-1}
+  .hero{padding:56px 0 40px}
+  .hero .wrap{display:grid;grid-template-columns:1fr 190px;gap:40px;align-items:center}
+  @media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1;width:140px}}
+  .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
+  .hero h1{font-size:clamp(1.9rem,4.5vw,2.6rem);line-height:1.15;margin:8px 0 10px;font-weight:700}
+  .tagline{color:var(--muted);max-width:520px}
+  .btns{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+  .btn{padding:8px 16px;border-radius:6px;font-weight:500;font-size:.83rem;border:1px solid var(--border);background:var(--surface);transition:.15s}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  @media(prefers-color-scheme:dark){.btn.primary{color:#0f1720}}
+  .btn:hover{border-color:var(--accent)}
+  .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:14px;display:block;border:1px solid var(--border)}
 
-  /* SECTIONS */
-  section{padding:64px 0}
-  .alt{background:color-mix(in srgb,var(--accent) 4%,var(--bg))}
-  h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:8px}
-  .lead{color:var(--muted);margin-bottom:32px;max-width:640px}
-  .card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-  .tag{font-size:.78rem;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:500}
-  .card h3{font-size:1.05rem;margin-bottom:4px}
-  .meta{color:var(--muted);font-size:.85rem;margin-bottom:8px}
-  .card ul{margin:8px 0 0 18px;color:var(--muted);font-size:.92rem}
-  .link{display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:.9rem}
+  section{padding:36px 0}
+  .alt{background:var(--tint)}
+  h2{font-size:1.2rem;font-weight:700;margin-bottom:16px;color:var(--accent)}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .card h3{font-size:.92rem;font-weight:600}
+  .meta{color:var(--muted);font-size:.78rem}
+  .card p{font-size:.86rem;color:var(--muted);margin-top:6px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .tag{font-size:.72rem;padding:2px 9px;border-radius:4px;background:var(--tint);color:var(--accent);font-weight:500}
+  .alt .tag{background:var(--surface)}
+  .link{display:inline-block;margin-top:10px;color:var(--accent);font-weight:600;font-size:.82rem}
 
-  /* ABOUT + STATS */
-  .about{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:start}
-  @media(max-width:800px){.about{grid-template-columns:1fr}}
-  .about p+p{margin-top:14px}
-  .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .stat{text-align:center;padding:18px 10px}
-  .stat b{display:block;font-family:'Playfair Display',serif;font-size:1.9rem}
-  .stat span{font-size:.8rem;color:var(--muted)}
+  .about{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start}
+  @media(max-width:760px){.about{grid-template-columns:1fr}}
+  .about p{color:var(--muted)}
+  .about p+p{margin-top:10px}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .stat{text-align:center;padding:12px 8px}
+  .stat b{display:block;font-size:1.2rem;color:var(--accent)}
+  .stat span{font-size:.7rem;color:var(--muted);line-height:1.3;display:block}
 
-  /* TIMELINE */
-  .timeline{border-left:2px solid var(--border);padding-left:26px;display:grid;gap:22px}
-  .item{position:relative}
-  .item::before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2))}
-  .item .when{font-size:.8rem;color:var(--accent);font-weight:600}
-  .item h3{font-size:1.05rem}
+  .rows{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+  @media(max-width:760px){.rows{grid-template-columns:1fr}}
+  .row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px}
+  .row h3{font-size:.86rem;font-weight:600}
+  .row .meta{display:flex;justify-content:space-between;gap:10px}
 
-  /* GOALS */
-  .steps{counter-reset:s}
-  .steps .card{position:relative}
-  .steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:20px;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem}
-  .motto{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3.5vw,2.1rem);line-height:1.4;text-align:center;margin-top:10px}
-
-  footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem}
-  .reveal{opacity:0;transform:translateY(18px);transition:.6s}
-  .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  footer{border-top:1px solid var(--border);padding:22px 0;text-align:center;color:var(--muted);font-size:.78rem}
+  footer em{display:block;margin-bottom:4px}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a href="#top" class="logo">Vashika M.</a>
+    <a href="#top" class="logo">Vashika Maheswaran</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#beyond">Beyond code</a></li>
+      <li><a href="#leadership">Volunteering</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -110,232 +94,114 @@
   <div class="wrap">
     <div>
       <div class="eyebrow">BSc (Hons) AI with Data Science · IIT × Robert Gordon University</div>
-      <h1>Hi, I’m Vashika.<br><span class="grad">Turning ideas into practical solutions through technology.</span></h1>
-      <p class="tagline">Second-year undergraduate who loves programming and front-end web development, and is seeking an Intern Python Developer role.</p>
-      <p class="roles">Technology Enthusiast &nbsp;|&nbsp; Problem Solver &nbsp;|&nbsp; Lifelong Learner</p>
+      <h1>Vashika Maheswaran</h1>
+      <p class="tagline">Turning ideas into practical solutions through technology. Second-year undergraduate with an interest in programming and front-end web development.</p>
       <div class="btns">
-        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="Vashika_Maheswaran_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         <a class="btn" href="https://www.linkedin.com/in/vashika-maheswaran-71a17738b" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/vashika-0507" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="Vashika_Maheswaran_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
-    <div class="photo"><img src="picc.jpeg" alt="Portrait of Vashika Maheswaran"></div>
+    <div class="photo"><img src="professionalpic.png" alt="Portrait of Vashika Maheswaran"></div>
   </div>
 </header>
 
-<section id="about" class="reveal">
+<section id="about">
   <div class="wrap">
-    <h2>About me</h2>
-    <p class="lead">A little about who I am and what drives me.</p>
+    <h2>About</h2>
     <div class="about">
       <div>
-        <p>I’m an 18-year-old second-year undergraduate studying BSc (Hons) Artificial Intelligence with Data Science at the Informatics Institute of Technology (IIT), Colombo, for a Robert Gordon University degree.</p>
-        <p>I enjoy programming and web development, with most of my experience so far in front-end work. I have a strong foundation in Python, object-oriented programming, SQL and databases, and I’m currently studying AI and Machine Learning modules. I like taking a problem, understanding it properly, and building something that actually works.</p>
-        <p>Outside the classroom, six years of school prefectship and volunteering at IIT events have taught me teamwork, responsibility and clear communication. I’m also a Bharatanatyam dancer, which has taught me discipline, rhythm and how to perform with a team. It turns out that precise footwork and clean code have more in common than you would think.</p>
+        <p>I am a second-year undergraduate studying AI and Data Science at the Informatics Institute of Technology (IIT), Colombo, for a Robert Gordon University degree.</p>
+        <p>I enjoy programming and web development, mostly front-end, with a foundation in Python, Java, SQL and databases. I am also a Bharatanatyam dancer.</p>
       </div>
       <div class="stats">
-        <div class="card stat"><b class="grad">#1</b><span>in the world, Cambridge O-Level Tamil (2023)</span></div>
-        <div class="card stat"><b class="grad">4 A</b><span>grades at Cambridge A-Levels</span></div>
-        <div class="card stat"><b class="grad">6 A*</b><span>at Cambridge O-Levels (plus 1 B)</span></div>
-        <div class="card stat"><b class="grad">6 yrs</b><span>of school prefectship</span></div>
+        <div class="card stat"><b>#1</b><span>in the world, Cambridge O-Level Tamil</span></div>
+        <div class="card stat"><b>4 A</b><span>Cambridge A-Levels</span></div>
+        <div class="card stat"><b>6 A*</b><span>Cambridge O-Levels</span></div>
+        <div class="card stat"><b>6 yrs</b><span>school prefectship</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="education" class="alt reveal">
+<section id="education" class="alt">
   <div class="wrap">
     <h2>Education</h2>
-    <p class="lead">My academic journey so far.</p>
-    <div class="timeline">
-      <div class="item">
-        <div class="when">Sep 2025 – Sep 2029 (expected)</div>
-        <h3>BSc (Hons) Artificial Intelligence with Data Science</h3>
-        <div class="meta">Informatics Institute of Technology (IIT), Colombo · Degree awarded by Robert Gordon University</div>
-        <p>Second-year modules include Artificial Intelligence and Machine Learning, alongside programming, databases, web development and data science.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>BSc (Hons) AI with Data Science</h3>
+        <div class="meta">Robert Gordon University, delivered by IIT Colombo · 2025 – 2029 (expected)</div>
       </div>
-      <div class="item">
-        <div class="when">Cambridge A-Levels · completed 2025</div>
-        <h3>A-Levels, Mathematics stream (Science)</h3>
-        <div class="meta">OKI International School Network</div>
-        <p>Mathematics, Chemistry, Physics and Computer Science. Result: <b>4 A grades</b>.</p>
-      </div>
-      <div class="item">
-        <div class="when">Cambridge O-Levels · May/June 2023</div>
-        <h3>O-Levels, Science stream</h3>
-        <div class="meta">OKI International School Network</div>
-        <p>English, Mathematics, Computer Science, Biology, Physics, Chemistry and Tamil. Result: <b>6 A* and 1 B</b>, including <b>first in the world for Tamil Language</b> (100/100).</p>
+      <div class="card">
+        <h3>Cambridge A-Levels and O-Levels</h3>
+        <div class="meta">OKI International School Network · 2013 – 2025</div>
+        <p>A-Levels: 4 A grades. O-Levels: 6 A* and 1 B.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="reveal">
+<section id="skills">
   <div class="wrap">
     <h2>Skills</h2>
-    <p class="lead">What I work with, and the strengths I bring to a team.</p>
     <div class="grid">
-      <div class="card"><h3>Programming languages</h3>
-        <div class="tags"><span class="tag">Python (strongest)</span><span class="tag">Java</span><span class="tag">R</span><span class="tag">SQL</span></div></div>
-      <div class="card"><h3>Python libraries</h3>
-        <div class="tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div></div>
-      <div class="card"><h3>AI &amp; Data Science</h3>
-        <div class="tags"><span class="tag">Data Science</span><span class="tag">Artificial Intelligence</span><span class="tag">Machine Learning</span><span class="tag">Statistics</span><span class="tag">Data analysis</span><span class="tag">Data visualisation</span></div></div>
-      <div class="card"><h3>Web development</h3>
-        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web development</span><span class="tag">Front-end development</span></div></div>
-      <div class="card"><h3>Databases</h3>
-        <div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Relational databases</span><span class="tag">DBMS</span><span class="tag">Schema design</span><span class="tag">Query writing &amp; optimisation</span></div></div>
-      <div class="card"><h3>Programming concepts &amp; tools</h3>
-        <div class="tags"><span class="tag">OOP</span><span class="tag">Data structures &amp; algorithms</span><span class="tag">Debugging &amp; testing</span><span class="tag">Git &amp; GitHub</span><span class="tag">Jupyter Notebook</span><span class="tag">VS Code</span></div></div>
-      <div class="card"><h3>Professional strengths</h3>
-        <div class="tags"><span class="tag">Problem solving</span><span class="tag">Teamwork</span><span class="tag">Adaptability</span><span class="tag">Attention to detail</span><span class="tag">Creative thinking</span><span class="tag">Communication</span><span class="tag">Leadership</span></div></div>
-      <div class="card"><h3>Languages</h3>
-        <div class="tags"><span class="tag">English</span><span class="tag">Tamil</span></div></div>
+      <div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">R</span><span class="tag">SQL</span></div></div>
+      <div class="card"><h3>Web</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
+      <div class="card"><h3>Data and AI</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">DBMS</span><span class="tag">Machine Learning</span><span class="tag">Statistics</span></div></div>
+      <div class="card"><h3>Professional</h3><div class="tags"><span class="tag">Teamwork</span><span class="tag">Problem solving</span><span class="tag">Communication</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="projects" class="alt reveal">
+<section id="projects" class="alt">
   <div class="wrap">
     <h2>Projects</h2>
-    <p class="lead">Things I’ve built. More coming soon as I keep learning.</p>
     <div class="grid">
-
-      <!-- PROJECT CARD: copy this whole block for each new project -->
       <div class="card">
         <h3>Personal Portfolio Website</h3>
         <div class="meta">Personal project · 2026</div>
-        <p>Designed and built this responsive portfolio website from scratch to present my education, skills, certifications and leadership experience. Includes light and dark modes, smooth scroll animations and a mobile-friendly layout, and is hosted on GitHub Pages.</p>
-        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div>
+        <p>A responsive portfolio website presenting my education, skills and experience, hosted on GitHub Pages.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
         <a class="link" href="https://github.com/vashika-0507/Vashika_PORTFOLIO" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
-      <!-- END PROJECT CARD -->
-
       <div class="card">
-        <h3>New projects on the way</h3>
-        <div class="meta">In progress</div>
-        <p>I’m building practical Python, AI and Machine Learning projects. Check back soon.</p>
+        <h3>More projects coming soon</h3>
+        <p>Python, AI and Machine Learning projects are in progress.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="leadership" class="reveal">
+<section id="leadership">
   <div class="wrap">
-    <h2>Leadership &amp; volunteering</h2>
-    <p class="lead">Where I’ve led, organised and supported.</p>
-    <div class="timeline">
-      <div class="item">
-        <div class="when">Oct 2026 – Present</div>
-        <h3>Logistics Volunteer</h3>
-        <div class="meta">Mozilla Campus Club – IIT</div>
-        <p>Volunteering as a Logistics Volunteer for the Mozilla Campus Club – IIT Installation Ceremony.</p>
-      </div>
-      <div class="item">
-        <div class="when">Sep 2026 – Present</div>
-        <h3>Logistics Volunteer</h3>
-        <div class="meta">IEEE WIE Affinity Group of IIT</div>
-        <p>Volunteering as a Logistics Volunteer for Sync Up 2.0, an event organised by the IEEE Women in Engineering Affinity Group of IIT.</p>
-      </div>
-      <div class="item">
-        <div class="when">May 2026 – Aug 2026</div>
-        <h3>Industry Outreach Member</h3>
-        <div class="meta">IEEE Computational Intelligence Society (CIS), IIT</div>
-        <p>Liaised with industry partners for Botwars, an event organised by IEEE CIS at IIT.</p>
-      </div>
-      <div class="item">
-        <div class="when">Jun 2026</div>
-        <h3>Project Showcase &amp; Logistics Volunteer</h3>
-        <div class="meta">Informatics Institute of Technology</div>
-        <p>Supported Cuttingedge ’26, IIT’s project showcase event, managing logistics and helping coordinate student project exhibits.</p>
-      </div>
-      <div class="item">
-        <div class="when">Jan 2026 – May 2026</div>
-        <h3>Logistics &amp; Industry Outreach Volunteer</h3>
-        <div class="meta">Informatics Institute of Technology</div>
-        <p>Volunteered at Stagecraft ’26, IIT’s flagship event, supporting event logistics and serving as an Industry Outreach member, coordinating with external companies and handling general volunteer duties.</p>
-      </div>
-      <div class="item">
-        <div class="when">2013 – 2025</div>
-        <h3>Junior, Senior &amp; Head Prefect</h3>
-        <div class="meta">OKI International School Network</div>
-        <p>Six years of prefectship: 3 years as Junior Prefect, 2 years as Senior Prefect and 1 year as Head Prefect.</p>
-      </div>
+    <h2>Volunteering and leadership</h2>
+    <div class="rows">
+      <div class="row"><h3>Logistics Volunteer</h3><div class="meta"><span>Mozilla Campus Club, IIT</span><span>Oct 2026 – Present</span></div></div>
+      <div class="row"><h3>Logistics Volunteer</h3><div class="meta"><span>IEEE WIE Affinity Group, Sync Up 2.0</span><span>Sep 2026 – Present</span></div></div>
+      <div class="row"><h3>Industry Outreach Member</h3><div class="meta"><span>IEEE CIS, IIT (Botwars)</span><span>May – Aug 2026</span></div></div>
+      <div class="row"><h3>Project Showcase Volunteer</h3><div class="meta"><span>Cuttingedge ’26, IIT</span><span>Jun 2026</span></div></div>
+      <div class="row"><h3>Logistics and Outreach Volunteer</h3><div class="meta"><span>Stagecraft ’26, IIT</span><span>Jan – May 2026</span></div></div>
+      <div class="row"><h3>Junior, Senior and Head Prefect</h3><div class="meta"><span>OKI International School Network</span><span>2013 – 2025</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="beyond" class="reveal">
+<section id="certifications" class="alt">
   <div class="wrap">
-    <h2>Beyond the code</h2>
-    <p class="lead">A well-rounded engineer is rarely only at a keyboard.</p>
+    <h2>Certifications and achievements</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Bharatanatyam</h3>
-        <div class="meta">Classical Indian dance</div>
-        <p>I am a Bharatanatyam dancer and have performed in group dances. Dance has built my discipline, patience and teamwork, the same qualities I bring to projects and events.</p>
-        <div class="tags"><span class="tag">Discipline</span><span class="tag">Teamwork</span><span class="tag">Performance</span></div>
-      </div>
+      <div class="card"><h3>Learning R (2019)</h3><div class="meta">LinkedIn Learning · Mar 2026</div></div>
+      <div class="card"><h3>IEEE Member (WIE, RAS, CIS)</h3><div class="meta">IEEE · Jun 2026 – Jun 2027</div></div>
+      <div class="card"><h3>First in the World, Tamil</h3><div class="meta">Cambridge O-Levels · May/June 2023</div></div>
     </div>
   </div>
 </section>
 
-<section id="certifications" class="alt reveal">
+<section id="contact">
   <div class="wrap">
-    <h2>Certifications &amp; achievements</h2>
-    <p class="lead">Recognition and courses I’ve completed.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>First in the World, Tamil Language</h3>
-        <div class="meta">Cambridge O-Levels · May/June 2023</div>
-        <p>Awarded for the top score worldwide in Tamil Language (100/100).</p>
-      </div>
-      <div class="card">
-        <h3>Learning R (2019)</h3>
-        <div class="meta">LinkedIn Learning · Mar 2026</div>
-        <p>Certificate of completion in the R programming language.</p>
-        <div class="tags"><span class="tag">R</span></div>
-      </div>
-      <div class="card">
-        <h3>IEEE Member</h3>
-        <div class="meta">IEEE · Jun 2026 – Jun 2027</div>
-        <p>Member of the world’s largest technical professional organisation.</p>
-      </div>
-      <div class="card">
-        <h3>IEEE Women in Engineering (WIE)</h3>
-        <div class="meta">IEEE · Member · Jun 2026 – Jun 2027</div>
-      </div>
-      <div class="card">
-        <h3>IEEE Robotics and Automation Society (RAS)</h3>
-        <div class="meta">IEEE · Member · Jun 2026 – Jun 2027</div>
-      </div>
-      <div class="card">
-        <h3>IEEE Computational Intelligence Society (CIS)</h3>
-        <div class="meta">IEEE · Member · Jun 2026 – Jun 2027</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="goals" class="reveal">
-  <div class="wrap">
-    <h2>Where I’m going</h2>
-    <p class="lead">My vision: to become a skilled AI and Data Science professional.</p>
-    <div class="grid steps">
-      <div class="card"><h3>Now</h3><p class="meta">AI &amp; Data Science undergraduate at IIT × Robert Gordon University.</p></div>
-      <div class="card"><h3>Short term</h3><ul><li>Strengthen programming and analytical skills</li><li>Build practical AI and Machine Learning projects</li><li>Gain industry experience through internships</li></ul></div>
-      <div class="card"><h3>Long term</h3><ul><li>Build a career in AI and Data Science</li><li>Develop intelligent, data-driven solutions</li><li>Contribute to meaningful technological innovation</li></ul></div>
-    </div>
-    <p class="motto grad" style="margin-top:50px">Learn continuously. Think creatively. Build meaningfully.</p>
-  </div>
-</section>
-
-<section id="contact" class="alt reveal">
-  <div class="wrap">
-    <h2>Let’s connect</h2>
-    <p class="lead">I’m looking for an Intern Python Developer opportunity. Write to me, and I promise a prompt reply with no runtime errors.</p>
-    <div class="btns">
+    <h2>Contact</h2>
+    <div class="btns" style="margin-top:0">
       <a class="btn primary" href="mailto:vashikamaheswaran2008@gmail.com">vashikamaheswaran2008@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/vashika-maheswaran-71a17738b" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://github.com/vashika-0507" target="_blank" rel="noopener">GitHub</a>
@@ -343,11 +209,10 @@
   </div>
 </section>
 
-<footer>© 2026 Vashika Maheswaran · Colombo, Sri Lanka</footer>
+<footer>
+  <em>Learn continuously. Think creatively. Build meaningfully.</em>
+  © 2026 Vashika Maheswaran · Colombo, Sri Lanka
+</footer>
 
-<script>
-  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.08});
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
 </body>
 </html>
